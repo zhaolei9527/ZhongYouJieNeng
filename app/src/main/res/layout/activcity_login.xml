@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/tv"
+        android:layout_width="@dimen/x184"
+        android:layout_height="@dimen/y57"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y88"
+        android:background="@mipmap/logo"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="@dimen/x243"
+        android:layout_height="@dimen/y39"
+        android:layout_below="@id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y28"
+        android:paddingLeft="@dimen/x15">
+
+        <ImageView
+            android:id="@+id/img_yonghu"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x20"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/dengluico1" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y33"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_toRightOf="@id/img_yonghu"
+            android:background="@null"
+            android:hint="请输入您的帐号"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="#eee"
+            android:textColorHint="#eee" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_below="@id/rl"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:background="@color/bgea"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="@dimen/x243"
+        android:layout_height="@dimen/y39"
+        android:layout_below="@id/rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y21"
+        android:paddingLeft="@dimen/x15">
+
+        <ImageView
+            android:id="@+id/img_mima"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x20"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/dengluico2" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y33"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_toRightOf="@id/img_mima"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="#eee"
+            android:textColorHint="#eee" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_below="@id/rl2"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:background="@color/bgea"></View>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/x242"
+        android:layout_height="@dimen/y38"
+        android:layout_below="@id/rl2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@drawable/bg_login"
+        android:text="立即登录"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="@dimen/x15"
+        android:visibility="visible" />
+
+</RelativeLayout>
